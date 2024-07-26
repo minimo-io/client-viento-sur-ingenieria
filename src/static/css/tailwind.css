@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+}
+
+h3 {
+    @apply text-2xl font-bold mb-3;
+}
+p {
+    @apply font-roboto;
+}
+
+/* Viento Sur Custom Css */
+@layer base {
+    :root {
+        --vs-color-sienna: #ef6f53;
+        --vs-color-metal: #285a84;
+    }
+    /*#navbar-sticky a:hover,
+     #navbar-sticky .selected {
+        border-bottom: 2px solid var(--vs-color-sienna);
+        padding-bottom: 5px;
+    } */
+}
+
+@layer utilities {
+    .partial-border,
+    #navbar-sticky a {
+        position: relative; /* Necessary for absolute positioning of pseudo-element */
+    }
+    .partial-border::after {
+        content: "";
+        position: absolute;
+        bottom: -5px; /* Adjust bottom position as needed */
+        left: 0;
+        width: 66.66%; /* 2/3 of the text width */
+        height: 2px;
+        border-bottom: 2px solid var(--vs-color-sienna); /* Customize color and thickness */
+    }
+    .partial-border:hover::after,
+    #navbar-sticky a:hover::after {
+        content: "";
+        position: absolute;
+        bottom: -5px; /* Adjust bottom position as needed */
+        left: 0;
+        width: 66.66%; /* 2/3 of the text width */
+        height: 2px;
+        border-bottom: 2px solid var(--vs-color-sienna); /* Customize color and thickness */
+    }
+}
