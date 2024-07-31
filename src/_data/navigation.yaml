@@ -1,5 +1,7 @@
 ---
 items:
+    - text: Inicio
+      url: "/"
     - text: Quienes somos
       url: "#"
     - text: Qué hacemos

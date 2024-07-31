@@ -19,9 +19,9 @@ module.exports = {
         extend: {
             fontFamily: {
                 roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
-                robotocondensed: ["Roboto Condensed", ...defaultTheme.fontFamily.sans],
                 titillium: ['"Titillium Web"'],
             },
+
             colors: {},
         },
     },
