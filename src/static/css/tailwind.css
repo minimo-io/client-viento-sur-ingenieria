@@ -18,6 +18,9 @@ button {
 button:hover {
     @apply opacity-70;
 }
+.vs-clients img {
+    @apply grayscale opacity-50 hover:opacity-100 hover:grayscale-0 cursor-pointer max-h-[30px] max-w-[100px];
+}
 
 /* Viento Sur Custom Css */
 @layer base {
