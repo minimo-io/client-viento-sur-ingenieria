@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+{% set pageBackgroundPosition = "bg-center" %}
+{% if backgroundPosition %}
+    {% set pageBackgroundPosition = backgroundPosition  %}
+{% endif %}
+<section class="h-screen max-h-[400px] relative bg-metal text-white flex bg-no-repeat flex-col items-start justify-center bg-cover bg-center md:{{ pageBackgroundPosition }} bg-[url('/static/img/backgrounds/{{ background }}')] border-metal border-b-[20px]">
+    <div class="absolute top-0 w-full h-5/6 bg-cover bg-no-repeat bg-top bg-[url('/static/img/grid-deco-opacity-50.png')]">
+        <div class="container h-100 relative pt-24 max-w-screen-lg text-center">
+            <h1 class="w-fit mx-auto partial-border partial-border-6 text-4xl md:text-6xl font-bold font-roboto text-center uppercase tracking-widest">
+                {{title}}
+            </h1>
+            <p class="mt-7 text-center mx-auto w-1/2 font-medium text-lg md:text-2xl font-titillium">{{ description }}</p>
+        </div>
+    </div>
+</section>
+{% set marginTop = "mt-6" %}
+{% if showClients %}
+    {% set marginTop = "mt-0" %}
+    {% include "clients.njk" %}
+{% endif %}
+
+<div class="container relative max-w-screen-sm {{ marginTop }} flex items-start justify-left px-7 md:px-0 {% if showClients %}-top-14{%endif%}">
+    <div class="block">
+        {{ content | safe }}
+    </div>
+</div>

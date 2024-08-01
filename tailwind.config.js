@@ -10,10 +10,16 @@ module.exports = {
             transparent: "transparent",
             current: "currentColor",
             white: "#ffffff",
-            sienna: "#ef6f53",
+            sienna: {
+                DEFAULT: "#ef6f53",
+                300: "#FAD4CB",
+            },
             metal: {
                 DEFAULT: "#285a84",
                 300: "#B7C6D3",
+            },
+            gray: {
+                DEFAULT: "#A5A5A5",
             },
         },
         extend: {

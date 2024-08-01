@@ -21,6 +21,15 @@ button:hover {
 .vs-clients img {
     @apply grayscale opacity-50 hover:opacity-100 hover:grayscale-0 cursor-pointer max-h-[30px] max-w-[100px];
 }
+.vs-heading {
+    @apply text-sienna text-2xl font-bold italic py-5;
+}
+.vs-sub-heading {
+    @apply text-metal font-roboto text-base tracking-widest text-justify leading-normal;
+}
+.vs-hr {
+    @apply border-sienna;
+}
 
 /* Viento Sur Custom Css */
 @layer base {
@@ -41,28 +50,59 @@ button:hover {
         position: relative; /* Necessary for absolute positioning of pseudo-element */
     }
     .partial-border::after {
+        --vs-partial-border: 3px;
         content: "";
         position: absolute;
         bottom: -5px; /* Adjust bottom position as needed */
         left: 0;
         width: 66.66%; /* 2/3 of the text width */
-        height: 3px;
-        border-bottom: 3px solid var(--vs-color-sienna); /* Customize color and thickness */
+        height: var(--vs-partial-border);
+        border-bottom: var(--vs-partial-border) solid var(--vs-color-sienna); /* Customize color and thickness */
     }
     .partial-border:hover::after,
     #navbar-sticky a:hover::after {
+        --vs-partial-border: 3px;
         content: "";
         position: absolute;
         bottom: -5px; /* Adjust bottom position as needed */
         left: 0;
         width: 66.66%; /* 2/3 of the text width */
-        height: 3px;
-        border-bottom: 3px solid var(--vs-color-sienna); /* Customize color and thickness */
+        height: var(--vs-partial-border);
+        border-bottom: var(--vs-partial-border) solid var(--vs-color-sienna); /* Customize color and thickness */
     }
+    .partial-border-6::after,
+    .partial-border-6:hover::after {
+        --vs-partial-border: 6px;
+        bottom: -10px;
+    }
+    .full-width {
+        width: 50vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -25vw;
+        margin-right: -25vw;
+    }
+    .tab-active {
+        background-color: var(--vs-color-sienna) !important;
+        /* font-weight: bold; */
+        color: white;
+    }
+
     @media (max-width: 768px) {
         .partial-border:after {
             height: 3px;
             bottom: -1px;
+        }
+    }
+    @media (max-width: 640px) {
+        .full-width {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
         }
     }
 }

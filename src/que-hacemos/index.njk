@@ -1,0 +1,132 @@
+---
+title: "Qué hacemos"
+description: "Ofrecemos soluciones de calidad a los desafíos técnicos de su empresa"
+layout: page
+---
+
+<div class="vs-section">
+    <h2 class="vs-heading">Intro.</h2>
+    <h3 class="vs-sub-heading font-normal">
+        Aquí encontrarás la solución a tus desafíos técnicos. Desde el desarrollo de materiales innovadores hasta la resolución de problemas complejos, nuestro equipo de ingenieros te ofrece soluciones personalizadas para impulsar tu proyecto.
+    </h3>
+    <div class="py-5"><hr class="vs-hr" /></div>
+</div>
+
+<div x-data="{ activeTab: 'materiales' }">
+  <div class="container flex flex-wrap  md:flex-nowrap justify-center gap-4 py-4">
+    <div @click.prevent="activeTab = 'materiales'"  :class="{ 'tab-active': activeTab === 'materiales' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
+      <div class="text-center">
+        <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Desarrollo de materiales</p>
+      </div>
+    </div>
+    <div @click.prevent="activeTab = 'asistencia'" :class="{ 'tab-active': activeTab === 'asistencia' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
+      <div class="text-center">
+        <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Asistencia técnica</p>
+      </div>
+    </div>
+    <div @click.prevent="activeTab = 'analisis'" :class="{ 'tab-active': activeTab === 'analisis' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
+      <div class="text-center">
+        <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Análisis de falla</p>
+      </div>
+    </div>
+    <div @click.prevent="activeTab = 'soluciones'" :class="{ 'tab-active': activeTab === 'soluciones' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
+      <div class="text-center">
+        <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Soluciones de ingeniería</p>
+      </div>
+    </div>  
+  </div>
+
+  <div class="py-5"><hr class="vs-hr" /></div>   
+
+
+  <div id="materiales" class="vs-section" x-show="activeTab === 'materiales'" x-transition>
+      <h2 class="vs-heading">Desarrollo de materiales.</h2>
+
+      <p class="vs-sub-heading font-light my-2">En <strong>Viento Sur Ingeniería</strong> no nos limitamos a utilizar los materiales existentes, los reinventamos. Nuestro equipo de desarrollo de materiales trabaja en la vanguardia de la innovación, explorando nuevas posibilidades y desafiando las convenciones para ofrecerte soluciones a medida que impulsan tu visión.</p>
+
+      <p class="vs-sub-heading font-light my-2">Combinamos la experiencia en ingeniería con la creatividad sin límites para desarrollar materiales que no solo cumplen con tus especificaciones técnicas, sino que también abren nuevas posibilidades de diseño y funcionalidad.</p>
+
+      <p class="vs-sub-heading font-light my-5">
+        Proin vel lacinia leo. Suspendisse feugiat consequat feugiat.
+      </p>
+
+      <figure class='full-width my-7'>
+        <img src="/static/img/backgrounds/bg-tunnel.jpg" class="rounded" />
+      </figure>
+      
+      <p class="vs-sub-heading font-light my-2">¿Necesitas un material más ligero y resistente? ¿O uno que sea flexible y duradero? Comparte tu desafío con nosotros y trabajaremos juntos para materializar tus ideas.</p>
+
+      <p class="vs-sub-heading font-light my-2">En <strong>Viento Sur Ingeniería</strong>, la innovación no es solo una palabra de moda, es parte de nuestro ADN. Permítenos ayudarte a construir el futuro, un material a la vez.</p>
+
+
+  
+  </div>
+
+
+
+  <div id="asistencia" class="vs-section" x-show="activeTab === 'asistencia'" x-transition>
+      <h2 class="vs-heading">Asistencia técnica.</h2>
+      <p class="vs-sub-heading font-light my-2">Aquí en <strong>Viento Sur Ingeniería</strong>, no solo construimos soluciones, construimos relaciones. Entendemos la frustración de un proyecto en pausa por un problema técnico inesperado. Por eso, te ofrecemos asistencia técnica personalizada, con la atención y el expertise que necesitas para superar cualquier obstáculo.</p>
+
+      <h3 class="vs-heading">¿Qué puedes esperar de nuestro servicio?</h3>
+
+      <p class="vs-sub-heading font-light my-2">
+
+        Respuestas claras y concisas: Olvida las largas explicaciones técnicas. Te guiaremos paso a paso, con un lenguaje sencillo y directo.
+      </p>
+      <p class="vs-sub-heading font-light my-2">
+        Expertos a tu disposición: Nuestro equipo de ingenieros altamente capacitados está listo para brindarte soluciones eficientes y creativas.
+      </p>
+      <p class="vs-sub-heading font-light my-2">
+        Disponibilidad cuando la necesitas: Sabemos que el tiempo es oro. Por eso, ofrecemos diferentes canales de comunicación para que puedas contactarnos con facilidad.
+      </p>
+      <p class="vs-sub-heading font-light my-2">
+        Compromiso con tu éxito: Tu éxito es nuestro éxito. Trabajaremos contigo hasta que el problema esté resuelto y tu proyecto vuelva a tomar impulso.
+      </p>
+  </div>  
+
+  <div id="analisis" class="vs-section" x-show="activeTab === 'analisis'" x-transition>
+      <h2 class="vs-heading">Análisis de falla.</h2>
+      <p class="vs-sub-heading font-light my-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum aliquam urna in ultrices. Proin nec venenatis arcu. Aenean id erat nec est rhoncus placerat lobortis at risus. Suspendisse hendrerit sit amet ante non blandit.
+      </p>
+      <p class="vs-sub-heading font-light my-2">
+        Maecenas lorem sapien, pulvinar nec magna nec, fermentum ultricies felis. Vivamus pulvinar nibh lectus, consectetur vehicula ipsum lacinia eu. Vestibulum bibendum at lectus sed consectetur. Donec commodo nunc risus, at mollis turpis hendrerit nec.
+      </p>
+      <p class="vs-sub-heading font-light my-5">
+        Proin vel lacinia leo. Suspendisse feugiat consequat feugiat.
+      </p>
+
+      <figure class='full-width my-7'>
+        <img src="/static/img/backgrounds/bg-tunnel.jpg" class="rounded" />
+      </figure>
+      
+      <p class="vs-sub-heading font-light my-2">
+        Maecenas lorem sapien, pulvinar nec magna nec, fermentum ultricies felis. Vivamus pulvinar nibh lectus, consectetur vehicula ipsum lacinia eu. Vestibulum bibendum at lectus sed consectetur. Donec commodo nunc risus, at mollis turpis hendrerit nec.
+       
+      </p>    
+  </div>   
+
+  <div id="soluciones" class="vs-section" x-show="activeTab === 'soluciones'" x-transition>
+    <div class="tab-content-inner">
+      <h2 class="vs-heading">Soluciones de ingeniería.</h2>
+      <p class="vs-sub-heading font-light my-2">En el vasto universo de la innovación, donde los sueños se entrelazan con la ciencia, nace nuestra pasión por las soluciones de ingeniería. Somos los arquitectos del mañana, los visionarios que convierten ideas audaces en realidades tangibles.</p>
+
+      <p class="vs-sub-heading font-light my-2">Desde las profundidades del océano hasta las alturas del espacio, nuestro equipo de ingenieros expertos navega por los desafíos más complejos con la precisión de un reloj suizo y la creatividad de un artista renacentista. Cada proyecto es un lienzo en blanco, esperando ser transformado por nuestras mentes inquietas y manos hábiles.</p>
+
+      <p class="vs-sub-heading font-light my-2">¿Imaginas un puente que desafíe la gravedad? Lo construimos. ¿Sueñas con ciudades flotantes que danzan sobre las olas? Las diseñamos. ¿Anhelas sistemas de energía que susurren en armonía con la naturaleza? Los creamos.</p>
+
+      <p class="vs-sub-heading font-light my-2">Nuestras soluciones no son solo respuestas a problemas; son catalizadores de progreso, faros de esperanza en un mundo hambriento de innovación. Con cada ecuación resuelta, cada prototipo perfeccionado, cada estructura erigida, acercamos el futuro un paso más a nuestro presente.</p>
+
+      <p class="vs-sub-heading font-light my-2">En este sanctum de ciencia y creatividad, no conocemos límites. Desafiamos lo convencional, abrazamos lo imposible y redefinimos los límites de lo posible. Porque para nosotros, la ingeniería no es solo una profesión; es un arte, una misión, una forma de vida.</p>
+
+      <p class="vs-sub-heading font-light my-2">Bienvenido al epicentro de la revolución tecnológica. Bienvenido a nuestro mundo de soluciones de ingeniería, donde cada día escribimos un nuevo capítulo en la historia del progreso humano.</p>
+
+      <p class="vs-sub-heading font-light my-2">¿Listo para ser parte de la próxima gran innovación? Únete a nosotros, y juntos, construyamos un futuro que supere incluso nuestros sueños más audaces.</p>
+    </div>
+  </div>  
+
+  <div class="my-10">
+    <a href="/contacto" type="button" class="font-light text-white font-titillium hover:opacity-50 bg-sienna rounded-md text-sm px-5 py-3 me-2 mb-2  uppercase">Entrar en contacto</a>
+  </div>
+</div>

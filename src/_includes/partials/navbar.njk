@@ -45,6 +45,7 @@
                 {% if navigation.items %}
 
                     {% for item in navigation.items %}
+                        
                         {%- set selected = "" -%}
                         {% if item.url == page.url %}
                             {%- set selected = "partial-border" -%}
@@ -52,8 +53,13 @@
                         <li>
                             <a
                                 href=" {{ item.url }}"
-                                class="Xblock Xpy-2 Xpx-3 hover:opacity-70 font-titillium text-metal uppercase Xrounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {{ selected }}"
+                                class="hover:opacity-70 font-titillium text-metal uppercase hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {%if selected and page.url == "/" %} {{ selected }}{%-endif-%}"
                             >
+                                {%- if selected and page.url != "/" -%}
+                                    <span class="material-symbols-outlined scale-[1.2] text-sienna text-xs md:text-xs pr-1 leading-3">
+                                        arrow_circle_right
+                                    </span>
+                                {%-endif-%}
                                  {{ item.text }}
                             </a>                            
                         </li>                    

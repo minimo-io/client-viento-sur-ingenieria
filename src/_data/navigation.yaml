@@ -3,8 +3,8 @@ items:
     - text: Inicio
       url: "/"
     - text: Quienes somos
-      url: "#"
+      url: "/quienes-somos/"
     - text: Qué hacemos
-      url: "#"
+      url: "/que-hacemos/"
     - text: Proyectos
-      url: "#"
+      url: "/proyectos/"
