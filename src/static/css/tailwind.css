@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
 h1 {
     @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
 }
@@ -29,6 +32,14 @@ button:hover {
 }
 .vs-hr {
     @apply border-sienna;
+}
+.vs-contact-form label {
+    @apply mt-3;
+}
+.vs-contact-form input,
+.vs-contact-form select,
+.vs-contact-form textarea {
+    @apply mt-1 block w-full  border-none focus:ring-metal-300 focus:border-metal-300 sm:text-sm text-metal bg-gray-100 px-3 py-3 font-light;
 }
 
 /* Viento Sur Custom Css */
@@ -73,6 +84,9 @@ button:hover {
     .partial-border-6::after,
     .partial-border-6:hover::after {
         --vs-partial-border: 6px;
+        bottom: -0.6rem !important;
+    }
+    .partial-border-leading-10 {
         bottom: -10px;
     }
     .full-width {
@@ -92,7 +106,7 @@ button:hover {
     @media (max-width: 768px) {
         .partial-border:after {
             height: 3px;
-            bottom: -1px;
+            bottom: -5px;
         }
     }
     @media (max-width: 640px) {

@@ -6,9 +6,14 @@ layout: base
 {% if backgroundPosition %}
     {% set pageBackgroundPosition = backgroundPosition  %}
 {% endif %}
-<section class="h-screen max-h-[400px] relative bg-metal text-white flex bg-no-repeat flex-col items-start justify-center bg-cover bg-center md:{{ pageBackgroundPosition }} bg-[url('/static/img/backgrounds/{{ background }}')] border-metal border-b-[20px]">
+{% if background %}
+    <section class="h-screen max-h-[400px] relative bg-metal text-white flex bg-no-repeat flex-col items-start justify-center md:{{ pageBackgroundPosition }} bg-blend-multiply from-transparent to-gray-400 Xbg-gradient-to-b bg-cover border-metal border-b-[20px] bg-[url('/static/img/backgrounds/{{ background }}')]">    
+{%else%}
+    <section class="h-screen max-h-[400px] relative bg-metal text-white flex bg-no-repeat flex-col items-start justify-center bg-blend-multiply from-transparent to-gray-400 bg-gradient-to-b border-metal border-b-[20px]">
+{%endif%}
+
     <div class="absolute top-0 w-full h-5/6 bg-cover bg-no-repeat bg-top bg-[url('/static/img/grid-deco-opacity-50.png')]">
-        <div class="container h-100 relative pt-24 max-w-screen-lg text-center">
+        <div class="container h-100 relative {% if showClients %}pt-20{%else%}pt-24{%endif%} max-w-screen-lg text-center">
             <h1 class="w-fit mx-auto partial-border partial-border-6 text-4xl md:text-6xl font-bold font-roboto text-center uppercase tracking-widest">
                 {{title}}
             </h1>
@@ -22,8 +27,8 @@ layout: base
     {% include "clients.njk" %}
 {% endif %}
 
-<div class="container relative max-w-screen-sm {{ marginTop }} flex items-start justify-left px-7 md:px-0 {% if showClients %}-top-14{%endif%}">
-    <div class="block">
+<div class="container relative {% if fullWidth %}max-w-screen-lg{%else%}max-w-screen-sm{%endif%} {{ marginTop }} flex items-start justify-center px-7 md:px-0 {% if showClients %}-top-14{%endif%}">
+    {% if not fullWidth %}<div class="block">{%endif%}
         {{ content | safe }}
-    </div>
+    {% if not fullWidth %}</div>{%endif%}
 </div>

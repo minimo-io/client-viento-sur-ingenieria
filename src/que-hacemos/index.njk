@@ -9,31 +9,36 @@ layout: page
     <h3 class="vs-sub-heading font-normal">
         Aquí encontrarás la solución a tus desafíos técnicos. Desde el desarrollo de materiales innovadores hasta la resolución de problemas complejos, nuestro equipo de ingenieros te ofrece soluciones personalizadas para impulsar tu proyecto.
     </h3>
-    <div class="py-5"><hr class="vs-hr" /></div>
+    <div class="py-5" id="heading-stop"><hr class="vs-hr" /></div>
 </div>
 
-<div x-data="{ activeTab: 'materiales' }">
-  <div class="container flex flex-wrap  md:flex-nowrap justify-center gap-4 py-4">
-    <div @click.prevent="activeTab = 'materiales'"  :class="{ 'tab-active': activeTab === 'materiales' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
+<div x-data="{ activeTab: 'materiales'}">
+  <div class="container flex flex-wrap  Xmd:flex-nowrap justify-center gap-4 py-4">
+    <div x-data="scroll" @click.prevent="activeTab = 'materiales'; scrollToTarget('heading-stop')"  :class="{ 'tab-active': activeTab === 'materiales' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Desarrollo de materiales</p>
       </div>
     </div>
-    <div @click.prevent="activeTab = 'asistencia'" :class="{ 'tab-active': activeTab === 'asistencia' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
+    <div  x-data="scroll" @click.prevent="activeTab = 'asistencia'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'asistencia' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Asistencia técnica</p>
       </div>
     </div>
-    <div @click.prevent="activeTab = 'analisis'" :class="{ 'tab-active': activeTab === 'analisis' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
+    <div  x-data="scroll" @click.prevent="activeTab = 'analisis'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'analisis' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Análisis de falla</p>
       </div>
     </div>
-    <div @click.prevent="activeTab = 'soluciones'" :class="{ 'tab-active': activeTab === 'soluciones' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
+    <div  x-data="scroll" @click.prevent="activeTab = 'soluciones'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'soluciones' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Soluciones de ingeniería</p>
       </div>
-    </div>  
+    </div>    
+    <div  x-data="scroll" @click.prevent="activeTab = 'fabricacion'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'fabricacion' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
+      <div class="text-center">
+        <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Fabricación aditiva</p>
+      </div>
+    </div>            
   </div>
 
   <div class="py-5"><hr class="vs-hr" /></div>   
@@ -126,7 +131,53 @@ layout: page
     </div>
   </div>  
 
+  <div id="fabricacion" class="vs-section" x-show="activeTab === 'fabricacion'" x-transition>
+    <div class="tab-content-inner">
+      <h2 class="vs-heading">Fabricación aditiva.</h2>
+      <p class="vs-sub-heading font-light my-2">La fabricación aditiva, también conocida como impresión 3D, es una tecnología de fabricación que ha revolucionado la forma en que diseñamos y producimos objetos. A diferencia de los métodos tradicionales de fabricación sustractiva (como el mecanizado), donde se elimina material de un bloque sólido, la fabricación aditiva construye objetos capa por capa, añadiendo material donde se necesita..</p>
+
+      <figure class='full-width my-7'>
+        <img src="/static/img/posts/fabricacion-aditiva.jpg" class="rounded" />
+      </figure>
+
+      <h2  class="vs-heading">El futuro de la fabricación aditiva</h2>
+      
+      <p class="vs-sub-heading font-light my-2">
+        La fabricación aditiva está transformando la industria, ofreciendo nuevas posibilidades y oportunidades. Se espera que esta tecnología continúe evolucionando y encontrando nuevas aplicaciones en diversos sectores.
+      </p>
+      <p class="vs-sub-heading font-light my-2">
+        ¿Te gustaría conocer más sobre algún aspecto específico de la fabricación aditiva? Por ejemplo, podemos profundizar en los diferentes tipos de impresoras 3D, los materiales utilizados o las aplicaciones en un sector en particular.
+      </p>
+      
+    </div>
+  </div>    
+
   <div class="my-10">
     <a href="/contacto" type="button" class="font-light text-white font-titillium hover:opacity-50 bg-sienna rounded-md text-sm px-5 py-3 me-2 mb-2  uppercase">Entrar en contacto</a>
   </div>
 </div>
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('scroll', () => ({
+            scrollToTarget(sectionId) {
+                const target = document.getElementById(sectionId);
+                const elementRect = target.getBoundingClientRect();   
+
+                const elementTop = elementRect.top + window.scrollY;
+
+                window.scrollTo({
+                    top: elementTop,
+                    behavior: 'smooth'
+                });
+            }
+        }));
+
+       Alpine.data('activeTab', () => ({
+ 
+            toggle(tab) {
+                this.activeTab = tab;
+            }
+        }))
+    })
+</script>

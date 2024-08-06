@@ -50,7 +50,7 @@
                         {% if item.url == page.url %}
                             {%- set selected = "partial-border" -%}
                         {% endif %}
-                        <li>
+                        <li class="pt-4 md:pt-0">
                             <a
                                 href=" {{ item.url }}"
                                 class="hover:opacity-70 font-titillium text-metal uppercase hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {%if selected and page.url == "/" %} {{ selected }}{%-endif-%}"
