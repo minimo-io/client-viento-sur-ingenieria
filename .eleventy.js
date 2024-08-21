@@ -1,8 +1,10 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 // const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(EleventyRenderPlugin);
     // Disable automatic use of your .gitignore
     eleventyConfig.setUseGitIgnore(false);
 
