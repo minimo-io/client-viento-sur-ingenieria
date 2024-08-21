@@ -15,7 +15,12 @@ layout: page
 
 <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 justify-center p-3 md:p-10 mb-10">
   <div class="md:col-span-3 pr-0 md:pr-6">
-    <h2 class="text-2xl font-bold mb-4 align-right font-titillium text-metal">¿Cómo podemos ayudarte?</h2>
+    <h2 class="text-2xl font-bold mb-4 align-right font-titillium text-metal">
+        {% renderTemplate "njk, md", contacto %}    
+          {{ formTitle }}
+        {% endrenderTemplate %}
+      {# ¿Cómo podemos ayudarte? #}
+    </h2>
 
     <form class="vs-contact-form" name="vs-contact" netlify>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 align-right">
