@@ -55,7 +55,9 @@ path: home
             <div class="py-5"><hr class="vs-hr" /></div>
         </div>         #}
        <div class="vs-section vs-home">
-            {{ homepage.content | safe }}
+            {% renderTemplate "njk, md", homepage %}    
+                    {{ content | safe }}
+            {% endrenderTemplate %}
         </div>
     {% if not fullWidth %}</div>{%endif%}
 </div>
