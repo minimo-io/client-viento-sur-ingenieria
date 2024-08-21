@@ -18,12 +18,12 @@ collections:
       files:
           - label: "Home"
             name: "home"
-            file: "src/index.njk"
+            file: "src/index.html"
             fields:
-                - { label: Title, name: title }
-                - { label: Description, name: description }
-                - { label: Layout, name: layout }
-                - { label: Path, name: path }
+                - { label: Title, name: title, widget: string }
+                - { label: Description, name: description, widget: string }
+                - { label: Layout, name: layout, widget: string }
+                - { label: Path, name: path, widget: string }
     - label: "Settings"
       name: "settings"
       editor:
