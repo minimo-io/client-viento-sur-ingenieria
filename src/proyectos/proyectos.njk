@@ -8,8 +8,11 @@ layout: page
 <div class="vs-section mb-10">
     <h2 class="vs-heading">Intro.</h2>
     <h3 class="vs-sub-heading font-normal">
-        Descubra el pináculo de la excelencia en ingeniería con Viento Sur Engenharia, una empresa uruguaya líder
-        especializada en ingeniería civil y estructural.
+        {% renderTemplate "njk, md", proyectos %}    
+          {{ content }}
+        {% endrenderTemplate %}         
+        {# Descubra el pináculo de la excelencia en ingeniería con Viento Sur Engenharia, una empresa uruguaya líder
+        especializada en ingeniería civil y estructural. #}
     </h3>
 </div>
 
