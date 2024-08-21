@@ -30,6 +30,13 @@ collections:
                 - { label: Title, name: title, widget: string }
                 - { label: Description, name: description, widget: string }
                 - { label: Content, name: content, widget: markdown }
+          - label: "Qué hacemos"
+            name: "que-hacemos"
+            file: "src/_data/queHacemos.yaml"
+            fields:
+                - { label: Title, name: title, widget: string }
+                - { label: Description, name: description, widget: string }
+                - { label: Content, name: content, widget: markdown }
     - label: "Settings"
       name: "settings"
       editor:

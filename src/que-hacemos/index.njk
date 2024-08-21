@@ -7,7 +7,10 @@ layout: page
 <div class="vs-section">
     <h2 class="vs-heading">Intro.</h2>
     <h3 class="vs-sub-heading font-normal">
-        Aquí encontrarás la solución a tus desafíos técnicos. Desde el desarrollo de materiales innovadores hasta la resolución de problemas complejos, nuestro equipo de ingenieros te ofrece soluciones personalizadas para impulsar tu proyecto.
+        {% renderTemplate "njk, md", queHacemos %}    
+          {{ content }}
+        {% endrenderTemplate %}       
+        {# Aquí encontrarás la solución a tus desafíos técnicos. Desde el desarrollo de materiales innovadores hasta la resolución de problemas complejos, nuestro equipo de ingenieros te ofrece soluciones personalizadas para impulsar tu proyecto. #}
     </h3>
     <div class="py-5" id="heading-stop"><hr class="vs-hr" /></div>
 </div>
