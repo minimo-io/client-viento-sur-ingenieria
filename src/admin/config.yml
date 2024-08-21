@@ -13,6 +13,17 @@ public_folder: "/static/uploads"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+    - label: Pages
+      name: pages
+      files:
+          - label: "Home"
+            name: "home"
+            file: "src/index.njk"
+            fields:
+                - { label: Title, name: title }
+                - { label: Description, name: description }
+                - { label: Layout, name: layout }
+                - { label: Path, name: path }
     - label: "Settings"
       name: "settings"
       editor:
