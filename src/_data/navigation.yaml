@@ -1,10 +1,11 @@
----
 items:
-    - text: Inicio
-      url: "/"
-    - text: Quienes somos
-      url: "/quienes-somos/"
-    - text: Qué hacemos
-      url: "/que-hacemos/"
-    - text: Proyectos
-      url: "/proyectos/"
+  - text: Inicio
+    url: /
+  - text: Quienes somos
+    url: /quienes-somos/
+  - text: Qué hacemos
+    url: /que-hacemos/
+  - text: Proyectos
+    url: /proyectos/
+  - text: Instagram
+    url: https://www.instagram.com/
