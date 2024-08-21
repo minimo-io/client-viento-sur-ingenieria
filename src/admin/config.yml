@@ -18,12 +18,11 @@ collections:
       files:
           - label: "Home"
             name: "home"
-            file: "src/index.html"
+            file: "src/_data/homepage.yaml"
             fields:
                 - { label: Title, name: title, widget: string }
                 - { label: Description, name: description, widget: string }
-                - { label: Layout, name: layout, widget: string }
-                - { label: Path, name: path, widget: string }
+                - { label: Content, name: content, widget: markdown }
     - label: "Settings"
       name: "settings"
       editor:
