@@ -23,6 +23,13 @@ collections:
                 - { label: Title, name: title, widget: string }
                 - { label: Description, name: description, widget: string }
                 - { label: Content, name: content, widget: markdown }
+          - label: "Quienes somos"
+            name: "quienes-somos"
+            file: "src/_data/quienesSomos.yaml"
+            fields:
+                - { label: Title, name: title, widget: string }
+                - { label: Description, name: description, widget: string }
+                - { label: Content, name: content, widget: markdown }
     - label: "Settings"
       name: "settings"
       editor:

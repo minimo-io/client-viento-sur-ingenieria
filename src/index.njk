@@ -47,13 +47,6 @@ path: home
 
 <div class="container relative {% if fullWidth %}max-w-screen-lg{%else%}max-w-screen-sm{%endif%} {{ marginTop }} flex items-start justify-center px-7 md:px-0 {% if showClients %}-top-14{%endif%}">
     {% if not fullWidth %}<div class="block">{%endif%}
-        {# <div class="vs-section">
-            <h2 class="vs-heading">Intro.</h2>
-            <h3 class="vs-sub-heading font-normal">
-                En Viento Sur Ingeniería, somos apasionados por el arte de la construcción, donde la precisión y la innovación se unen para dar vida a proyectos excepcionales. Somos una firma de ingeniería civil y estructural con sede en Uruguay, donde nuestra experiencia y compromiso nos han convertido en referentes en la región. 
-            </h3>
-            <div class="py-5"><hr class="vs-hr" /></div>
-        </div>         #}
        <div class="vs-section vs-home">
             {% renderTemplate "njk, md", homepage %}    
                     {{ content | safe }}
