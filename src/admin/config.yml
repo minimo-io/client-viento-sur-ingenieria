@@ -22,7 +22,7 @@ collections:
             fields:
                 - { label: Title, name: title, widget: string }
                 - { label: Description, name: description, widget: string }
-                - { label: Slogan, name: slogn, widget: string }
+                - { label: Slogan, name: slogan, widget: string }
                 - { label: Subtext, name: subtext, widget: string }
                 - { label: Background Image, name: bgImage, widget: file }
                 - label: "1st Home Button"
@@ -39,12 +39,6 @@ collections:
                   fields:
                       - { label: "Button Text", name: "button2Text", widget: "string" }
                       - { label: "Button Url", name: "button2Url", widget: "string" }
-
-                - { label: Button 1 Text, name: button1Text, widget: string }
-                - { label: Button 1 Url, name: button1Url, widget: string }
-                - { label: Button 2 Text, name: button2Text, widget: string }
-                - { label: Button 2 Url, name: button2Url, widget: string }
-
                 - { label: Content, name: content, widget: markdown }
           - label: "Quienes somos"
             name: "quienes-somos"
