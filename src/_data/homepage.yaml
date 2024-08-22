@@ -1,9 +1,15 @@
-title: "Viento Sur Ingeniería"
-description: "Soluciones adaptadas a cada contexto"
-slogan: "Soluciones adaptadas a cada contexto"
-subtext: "En Viento Sur adaptamos la ingeniería a sus necesidades"
-background: "/static/uploads/bg-home.jpg"
-content: >-
-    Ok, no titles but i can do a set of other things right? What do you think?
-    [This](https://www.google.com) is really. And here we have an
-    underline.
+title: Viento Sur Ingeniería
+description: Soluciones adaptadas a cada contexto
+slogan: Soluciones adaptadas a cada contexto
+subtext: En Viento Sur adaptamos la ingeniería a sus necesidades
+bgImage: /static/uploads/project-lightning-beer.webp
+button2:
+  button2Text: Algunos proyectos
+  button2Url: /proyectos/
+background: /static/uploads/bg-home.jpg
+button1:
+  button1Text: Qué hacemos
+  button1Url: /que-hacemos/
+content: Ok, no titles but i can do a set of other things right? What do you
+  think? [This](https://www.google.com) is really. And here we have an
+  underline.
