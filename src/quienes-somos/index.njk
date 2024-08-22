@@ -1,16 +1,17 @@
 ---
-title: "Quienes somos"
-description: "Un quienes somos para Viento Sur Ingeniería que, idealmente, se puede extender hasta cierta cantidad de caracteres"
+eleventyComputed:
+  title: "{{ quienesSomos.title }}"
+  description: ""{{ quienesSomos.description }}""
 background: "bg-home.png"
 backgroundPosition: "bg-top"
 layout: page
 ---
 
 <div class="vs-section">
-    <h2 class="vs-heading">Intro.</h2>
+    <h2 class="vs-heading">{{quienesSomos.introTitle}}</h2>
     <h3 class="vs-sub-heading font-normal">
         {% renderTemplate "njk, md", quienesSomos %}    
-          {{ content }}
+          {{ introContent }}
         {% endrenderTemplate %}      
       
         {# En Viento Sur Ingeniería, somos apasionados por el arte de la construcción, donde la precisión y la innovación se unen para dar vida a proyectos excepcionales. Somos una firma de ingeniería civil y estructural con sede en Uruguay, donde nuestra experiencia y compromiso nos han convertido en referentes en la región.  #}
@@ -40,29 +41,33 @@ layout: page
 </div>
 
 <div class="vs-section">
-    <h2 class="vs-heading">Nosotros.</h2>
+    <h2 class="vs-heading">{{ quienesSomos.detailsTitle }}</h2>
     <h3 class="vs-sub-heading font-light">
-        En Viento Sur Ingeniería, somos apasionados por el arte de la construcción, donde la precisión y la innovación.
+            {% renderTemplate "njk, md", quienesSomos %}    
+                    {{ detailsText | safe }}
+            {% endrenderTemplate %}
+        {# En Viento Sur Ingeniería, somos apasionados por el arte de la construcción, donde la precisión y la innovación. #}
     </h3>
 </div>
-
-<div class="container gap-4 flex flex-wrap justify-center md:justify-between mb-20 mt-7">
-  <div class="flex flex-col items-center justify-center">
-    <img src="/static/img/profiles/profile-1.png" alt="Ignacio Duarte" class="md:w-[200px]">
-    <p class="text-lg font-bold mt-2 text-gray font-roboto">Ignacio Duarte</p>
-    <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
-    <button class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</button>
+{% if quienesSomos.showProfiles %}
+  <div class="container gap-4 flex flex-wrap justify-center md:justify-between mb-20 mt-7">
+    <div class="flex flex-col items-center justify-center">
+      <img src="/static/img/profiles/profile-1.png" alt="Ignacio Duarte" class="md:w-[200px]">
+      <p class="text-lg font-bold mt-2 text-gray font-roboto">Ignacio Duarte</p>
+      <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
+      <button class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</button>
+    </div>
+    <div class="flex flex-col items-center">
+      <img src="/static/img/profiles/profile-2.png" alt="Martin Duarte" class="md:w-[200px]">
+      <p class="text-lg font-bold mt-2 text-gray font-roboto">Martín Duarte</p>
+      <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
+      <button class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</button>
+    </div>
+    <div class="flex flex-col items-center">
+      <img src="/static/img/profiles/profile-3.png" alt="Diego Duarte" class="md:w-[200px]">
+      <p class="text-lg font-bold mt-2 text-gray font-roboto">Diego Duarte</p>
+      <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
+      <button class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</button>
+    </div>
   </div>
-  <div class="flex flex-col items-center">
-    <img src="/static/img/profiles/profile-2.png" alt="Martin Duarte" class="md:w-[200px]">
-    <p class="text-lg font-bold mt-2 text-gray font-roboto">Martín Duarte</p>
-    <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
-    <button class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</button>
-  </div>
-  <div class="flex flex-col items-center">
-    <img src="/static/img/profiles/profile-3.png" alt="Diego Duarte" class="md:w-[200px]">
-    <p class="text-lg font-bold mt-2 text-gray font-roboto">Diego Duarte</p>
-    <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
-    <button class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</button>
-  </div>
-</div>
+{% endif %}
