@@ -2,26 +2,31 @@ title: Quienes somos
 description: En Viento Sur Ingeniería, somos apasionados por el arte de la construcción
 introTitle: Intro.
 introContent: En Viento Sur Ingeniería, somos apasionados por el arte de la
-    construcción, donde la precisión y la innovación se unen para dar vida a
-    proyectos excepcionales. Somos una firma de ingeniería civil y estructural con
-    sede en Uruguay, donde nuestra experiencia y compromiso nos han convertido en
-    referentes en la región.
+  construcción, donde la precisión y la innovación se unen para dar vida a
+  proyectos excepcionales. Somos una firma de ingeniería civil y estructural con
+  sede en Uruguay, donde nuestra experiencia y compromiso nos han convertido en
+  referentes en la región.
 highlights1:
-    amount: 251
-    text: proyectos realizados
+  amount: 251
+  text: proyectos realizados
 highlights2:
-    amount: 23
-    text: profesionales trabajando!
+  amount: 23
+  text: profesionales trabajando!
 highlights3:
-    amount: 4
-    text: países
+  amount: 4
+  text: países
 showProfiles: true
 profiles:
-    - profile:
-          name: Ignacio Duartec
-          profession: Geólogo
-          link: https://google.com
-          image: "/static/uploads/profile-1.png"
+  - profile:
+      name: Ignacio Duartec
+      profession: Geólogo
+      link: https://google.com
+      image: /static/uploads/profile-1.png
+  - profile:
+      image: /static/uploads/profile-1.png
+      name: Martín Duarte
+      profession: Ingeniero
+      link: https://linkedin.com
 detailsText: En Viento Sur Ingeniería, somos apasionados por el arte de la
-    construcción, donde la precisión y la innovación.
+  construcción, donde la precisión y la innovación.
 detailsTitle: Nosotros.
