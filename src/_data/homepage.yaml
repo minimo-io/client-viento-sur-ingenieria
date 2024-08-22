@@ -2,14 +2,13 @@ title: Viento Sur Ingeniería
 description: Soluciones adaptadas a cada contexto
 slogan: Soluciones adaptadas a cada contexto
 subtext: En Viento Sur adaptamos la ingeniería a sus necesidades
-bgImage: /static/uploads/project-lightning-beer.webp
 button2:
-  button2Text: Algunos proyectos
-  button2Url: /proyectos/
-background: /static/uploads/bg-home.jpg
+    text: Algunos proyectos
+    url: /proyectos/
+background: /static/uploads/project-lightning-beer.webp
 button1:
-  button1Text: Qué hacemos
-  button1Url: /que-hacemos/
+    text: Qué hacemos
+    url: /que-hacemos/
 content: Ok, no titles but i can do a set of other things right? What do you
-  think? [This](https://www.google.com) is really. And here we have an
-  underline.
+    think? [This](https://www.google.com) is really. And here we have an
+    underline.

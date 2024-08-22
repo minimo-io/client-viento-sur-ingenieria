@@ -24,19 +24,19 @@ path: home
 
             <div class="mt-8 text-center md:text-left">
                 <a
-                    href="/que-hacemos/"
+                    href="{{ homepage.button1.url }}"
                     type="button"
                     class="font-light text-white font-titillium bg-metal rounded-md text-sm px-5 py-3 me-2 mb-2 hover:opacity-50 uppercase"
                 >
-                    Qué hacemos
+                    {{ homepage.button1.text }}
                 </a>
 
                 <a
-                    href="/proyectos/"
+                    href="{{ homepage.button2.url }}"
                     type="button"
                     class="py-3 px-5 me-2 mb-2 font-titillium text-sm font-light bg-white rounded-md border border-gray-200 hover:opacity-50 focus:z-10 focus:ring-4 focus:ring-gray-100 uppercase text-sienna"
                 >
-                    Nuestro trabajo
+                    {{ homepage.button2.text }}
                 </a>
             </div>
         </div>
