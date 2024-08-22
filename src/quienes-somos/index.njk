@@ -51,7 +51,17 @@ layout: page
 </div>
 {% if quienesSomos.showProfiles %}
   <div class="container gap-4 flex flex-wrap justify-center md:justify-between mb-20 mt-7">
-    <div class="flex flex-col items-center justify-center">
+    {% for item in quienesSomos.profiles %}
+      <div class="flex flex-col items-center">
+        <img src="{{ item.profile.image }}" alt="{{ item.profile.name }}" class="md:w-[200px]">
+        <p class="text-lg font-bold mt-2 text-gray font-roboto">{{ item.profile.name }}</p>
+        <p class="text-sm text-gray font-light font-roboto">{{ item.profile.profession }}</p>
+        <a type="button" href="{{ item.profile.link }}" class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</a>
+      </div>
+    {% else %}
+      
+    {% endfor %}
+    {# <div class="flex flex-col items-center">
       <img src="/static/img/profiles/profile-1.png" alt="Ignacio Duarte" class="md:w-[200px]">
       <p class="text-lg font-bold mt-2 text-gray font-roboto">Ignacio Duarte</p>
       <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
@@ -68,6 +78,6 @@ layout: page
       <p class="text-lg font-bold mt-2 text-gray font-roboto">Diego Duarte</p>
       <p class="text-sm text-gray font-light font-roboto">Ingeniero Civil</p>
       <button class="bg-sienna hover:opacity-50 text-white font-bold py-1 px-4 rounded mt-2">Ver Perfil</button>
-    </div>
+    </div> #}
   </div>
 {% endif %}
