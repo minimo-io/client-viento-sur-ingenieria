@@ -6,7 +6,7 @@ path: home
 ---
 
 <section
-    class="h-screen max-h-[600px] relative bg-metal text-white flex bg-no-repeat flex-col items-start justify-center bg-cover bg-center bg-[url('/static/img/backgrounds/bg-que-hacemos.jpg')] border-metal border-b-[20px] bg-blend-multiply from-transparent to-gray-400 Xbg-gradient-to-b"
+    class="h-screen max-h-[600px] relative bg-metal text-white flex bg-no-repeat flex-col items-start justify-center bg-cover bg-center bg-[url('{{ homepage.background }}')] border-metal border-b-[20px] bg-blend-multiply from-transparent to-gray-400 Xbg-gradient-to-b"
 >
     <div
         class="absolute top-0 w-full h-5/6 bg-cover bg-no-repeat bg-top bg-[url('/static/img/grid-deco-opacity-50.png')]"
@@ -15,11 +15,11 @@ path: home
             <h1
                 class="w-3/4 md:w-9/12 text-4xl md:text-6xl font-bold font-robotocondensed text-center md:text-left items-center md:items-start uppercase tracking-normal partial-border partial-border-6"
             >
-                Soluciones adaptadas a cada contexto
+                {{ homepage.slogan }}
             </h1>
 
             <p class="mt-4 text-center md:text-left font-medium text-lg md:text-2xl font-titillium">
-                {{ description }}
+                {{ homepage.subtext }}
             </p>
 
             <div class="mt-8 text-center md:text-left">

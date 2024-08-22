@@ -22,6 +22,14 @@ collections:
             fields:
                 - { label: Title, name: title, widget: string }
                 - { label: Description, name: description, widget: string }
+                - { label: Slogan, name: slogn, widget: string }
+                - { label: Subtext, name: subtext, widget: string }
+                - { label: Background Image, name: bgImage, widget: string }
+                - label: Buttons
+                  name: "homeButtons"
+                  fields:
+                      - { label: Title, name: text, widget: string }
+                      - { label: URL, name: url, widget: string }
                 - { label: Content, name: content, widget: markdown }
           - label: "Quienes somos"
             name: "quienes-somos"

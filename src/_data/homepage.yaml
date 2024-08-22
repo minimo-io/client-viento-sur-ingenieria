@@ -1,15 +1,9 @@
-title: Viento Sur Ingeniería!!!
-description: Soluciones adaptadas a cada contexto
+title: "Viento Sur Ingeniería"
+description: "Soluciones adaptadas a cada contexto"
+slogan: "Soluciones adaptadas a cada contexto"
+subtext: "En Viento Sur adaptamos la ingeniería a sus necesidades"
+background: "/static/uploads/bg-home.jpg"
 content: >-
-  Ok, no titles but i can do a set of other things right? What do you think?
-  [This](https://www.google.com) is really **bold. And *here we have an
-  underline*.**
-
-
-  **`Here a code`**
-
-
-  > **Here a quote**
-
-
-  ![](/static/uploads/frame-17.png)
+    Ok, no titles but i can do a set of other things right? What do you think?
+    [This](https://www.google.com) is really. And here we have an
+    underline.
