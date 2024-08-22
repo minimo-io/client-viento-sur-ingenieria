@@ -25,13 +25,20 @@ collections:
                 - { label: Slogan, name: slogn, widget: string }
                 - { label: Subtext, name: subtext, widget: string }
                 - { label: Background Image, name: bgImage, widget: file }
-                - label: "Buttons"
-                  name: "homeButtons"
+                - label: "1st Home Button"
+                  name: "button1"
                   widget: "object"
-                  summary: "Home Buttons"
+                  summary: "Button"
                   fields:
-                      - { label: "1st Button Text", name: "button1Text", widget: "string" }
-                      - { label: "1st Button Url", name: "button1Url", widget: "string" }
+                      - { label: "Button Text", name: "button1Text", widget: "string" }
+                      - { label: "Button Url", name: "button1Url", widget: "string" }
+                - label: "2nd Home Button"
+                  name: "button2"
+                  widget: "object"
+                  summary: "Button"
+                  fields:
+                      - { label: "Button Text", name: "button2Text", widget: "string" }
+                      - { label: "Button Url", name: "button2Url", widget: "string" }
 
                 - { label: Button 1 Text, name: button1Text, widget: string }
                 - { label: Button 1 Url, name: button1Url, widget: string }
