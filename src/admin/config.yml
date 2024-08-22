@@ -16,7 +16,7 @@ collections:
     - label: Pages
       name: pages
       files:
-          - label: "Home"
+          - label: "Inicio"
             name: "home"
             file: "src/_data/homepage.yaml"
             fields:
