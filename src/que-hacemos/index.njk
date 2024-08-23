@@ -1,15 +1,16 @@
 ---
-title: "Qué hacemos"
-description: "Ofrecemos soluciones de calidad a los desafíos técnicos de su empresa"
+eleventyComputed:
+  title: "{{ queHacemos.title }}"
+  description: "{{ queHacemos.description }}"
 layout: page
 ---
 
 <div class="vs-section">
-    <h2 class="vs-heading">Intro.</h2>
+    <h2 class="vs-heading">{{ queHacemos.introTitle }}</h2>
     <h3 class="vs-sub-heading font-normal">
         {% renderTemplate "njk, md", queHacemos %}    
-          {{ content }}
-        {% endrenderTemplate %}       
+          {{ introContent }}
+        {% endrenderTemplate %}     
         {# Aquí encontrarás la solución a tus desafíos técnicos. Desde el desarrollo de materiales innovadores hasta la resolución de problemas complejos, nuestro equipo de ingenieros te ofrece soluciones personalizadas para impulsar tu proyecto. #}
     </h3>
     <div class="py-5" id="heading-stop"><hr class="vs-hr" /></div>

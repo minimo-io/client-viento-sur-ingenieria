@@ -40,7 +40,15 @@ collections:
                       - { label: "Button Text", name: "text", widget: "string" }
                       - { label: "Button Url", name: "url", widget: "string" }
                 - { label: Content, name: content, widget: markdown }
-          - label: "Quienes somos"
+          - label: Qué hacemos?
+            name: "que-hacemos"
+            file: "src/_data/queHacemos.yaml"
+            fields:
+                - { label: Title, name: title, widget: string }
+                - { label: Description, name: description, widget: string }
+                - { label: Intro Title, name: introTitle, widget: string }
+                - { label: Intro Content, name: introContent, widget: markdown }
+          - label: "Quiénes somos"
             name: "quienes-somos"
             file: "src/_data/quienesSomos.yaml"
             fields:
