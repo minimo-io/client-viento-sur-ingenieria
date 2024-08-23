@@ -47,6 +47,14 @@ button:hover {
 .vs-section-service img {
     @apply full-width my-7 rounded;
 }
+.vs-section-service img > parent {
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.vs-section-service p:has(> img) {
+    @apply full-width my-7 rounded;
+}
 
 /* Viento Sur Custom Css */
 @layer base {
