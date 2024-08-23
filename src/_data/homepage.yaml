@@ -9,6 +9,8 @@ button1:
 button2:
   text: Algunos proyectos
   url: /proyectos/
-content: Ok, no titles but i can do a set of other things right? What do you
-  think? [This](https://www.google.com) is really. And here we have an
-  underline.
+content: >-
+  ## Intro.
+
+
+  Ok, no titles but i can do a set of other things right? What do you think? [This](https://www.google.com) is really. And here we have an underline.
