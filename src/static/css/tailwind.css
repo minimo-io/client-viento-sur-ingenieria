@@ -55,6 +55,9 @@ button:hover {
 .vs-section-service p:has(> img) {
     @apply full-width my-7 rounded;
 }
+.vs-section-service h2 {
+    @apply vs-heading;
+}
 
 /* Viento Sur Custom Css */
 @layer base {
