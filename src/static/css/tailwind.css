@@ -41,6 +41,12 @@ button:hover {
 .vs-contact-form textarea {
     @apply mt-1 block w-full  border-none focus:ring-metal-300 focus:border-metal-300 sm:text-sm text-metal bg-gray-100 px-3 py-3 font-light;
 }
+.vs-section-service {
+    @apply vs-sub-heading font-light my-2;
+}
+.vs-section-service img {
+    @apply full-width my-7 rounded;
+}
 
 /* Viento Sur Custom Css */
 @layer base {

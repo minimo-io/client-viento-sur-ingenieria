@@ -60,7 +60,7 @@ layout: page
   <div class="py-5"><hr class="vs-hr" /></div>   
 
 
-  <div id="materiales" class="vs-section" x-show="activeTab === 'materiales'" x-transition>
+  <div id="materiales" class="vs-section vs-section-service" x-show="activeTab === 'materiales'" x-transition>
       <h2 class="vs-heading">Desarrollo de materiales.</h2>
 
       <p class="vs-sub-heading font-light my-2">En <strong>Viento Sur Ingeniería</strong> no nos limitamos a utilizar los materiales existentes, los reinventamos. Nuestro equipo de desarrollo de materiales trabaja en la vanguardia de la innovación, explorando nuevas posibilidades y desafiando las convenciones para ofrecerte soluciones a medida que impulsan tu visión.</p>
@@ -83,7 +83,7 @@ layout: page
   
   </div>
 
-  <div id="asistencia" class="vs-section" x-show="activeTab === 'asistencia'" x-transition>
+  <div id="asistencia" class="vs-section vs-section-service" x-show="activeTab === 'asistencia'" x-transition>
       <h2 class="vs-heading">Asistencia técnica.</h2>
       <p class="vs-sub-heading font-light my-2">Aquí en <strong>Viento Sur Ingeniería</strong>, no solo construimos soluciones, construimos relaciones. Entendemos la frustración de un proyecto en pausa por un problema técnico inesperado. Por eso, te ofrecemos asistencia técnica personalizada, con la atención y el expertise que necesitas para superar cualquier obstáculo.</p>
 
@@ -104,7 +104,7 @@ layout: page
       </p>
   </div>  
 
-  <div id="analisis" class="vs-section" x-show="activeTab === 'analisis'" x-transition>
+  <div id="analisis" class="vs-section vs-section-service" x-show="activeTab === 'analisis'" x-transition>
       <h2 class="vs-heading">Análisis de falla.</h2>
       <p class="vs-sub-heading font-light my-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum aliquam urna in ultrices. Proin nec venenatis arcu. Aenean id erat nec est rhoncus placerat lobortis at risus. Suspendisse hendrerit sit amet ante non blandit.
@@ -126,7 +126,7 @@ layout: page
       </p>    
   </div>   
 
-  <div id="soluciones" class="vs-section" x-show="activeTab === 'soluciones'" x-transition>
+  <div id="soluciones" class="vs-section vs-section-service" x-show="activeTab === 'soluciones'" x-transition>
     <div class="tab-content-inner">
       <h2 class="vs-heading">Soluciones de ingeniería.</h2>
       <p class="vs-sub-heading font-light my-2">En el vasto universo de la innovación, donde los sueños se entrelazan con la ciencia, nace nuestra pasión por las soluciones de ingeniería. Somos los arquitectos del mañana, los visionarios que convierten ideas audaces en realidades tangibles.</p>
@@ -145,7 +145,7 @@ layout: page
     </div>
   </div>  
 
-  <div id="fabricacion" class="vs-section" x-show="activeTab === 'fabricacion'" x-transition>
+  <div id="fabricacion" class="vs-section vs-section-service" x-show="activeTab === 'fabricacion'" x-transition>
     <div class="tab-content-inner">
       <h2 class="vs-heading">Fabricación aditiva.</h2>
       <p class="vs-sub-heading font-light my-2">La fabricación aditiva, también conocida como impresión 3D, es una tecnología de fabricación que ha revolucionado la forma en que diseñamos y producimos objetos. A diferencia de los métodos tradicionales de fabricación sustractiva (como el mecanizado), donde se elimina material de un bloque sólido, la fabricación aditiva construye objetos capa por capa, añadiendo material donde se necesita..</p>
@@ -168,7 +168,7 @@ layout: page
 
   {% for item in queHacemos.services %}
     {% set serviceSlug %}{{ item.service.title | slugify}}{% endset %}
-      <div id="{{ serviceSlug }}" class="vs-section" x-show="activeTab === '{{ serviceSlug }}'" x-transition>
+      <div id="{{ serviceSlug }}" class="vs-section vs-section-service" x-show="activeTab === '{{ serviceSlug }}'" x-transition>
         <div class="tab-content-inner">
           <h2 class="vs-heading">{{ item.service.title }}.</h2>
 
