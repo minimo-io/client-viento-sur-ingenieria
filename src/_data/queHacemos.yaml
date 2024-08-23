@@ -65,3 +65,65 @@ services:
 
 
         La mecatrónica engloba así el desarrollo de productos que involucren un sistema de control para productos o procesos inteligentes, lo cual busca crear **maquinaria más compleja** para facilitar las actividades del ser humano a través de procesos electrónicos de sistemas de control aplicados en la industria. Esta disciplina une la ingeniería de sistemas/ciencia de la computación,\[cita requerida] la ingeniería electrónica, la ingeniería mecánica y la ingeniería de control.
+  - service:
+      title: Fabricación aditiva
+      content: >-
+        La fabricación aditiva, también conocida como impresión 3D, es una
+        tecnología de fabricación que ha revolucionado la forma en que diseñamos
+        y producimos objetos. A diferencia de los métodos tradicionales de
+        fabricación sustractiva (como el mecanizado), donde se elimina material
+        de un bloque sólido, la fabricación aditiva construye objetos capa por
+        capa, añadiendo material donde se necesita.
+
+
+        ![](/static/uploads/fabricacion-aditiva.jpg)
+
+
+        ## El futuro de la fabricación aditiva
+
+
+        La fabricación aditiva está transformando la industria, ofreciendo nuevas posibilidades y oportunidades. Se espera que esta tecnología continúe evolucionando y encontrando nuevas aplicaciones en diversos sectores.
+
+
+        ¿Te gustaría conocer más sobre algún aspecto específico de la fabricación aditiva? Por ejemplo, podemos profundizar en los diferentes tipos de impresoras 3D, los materiales utilizados o las aplicaciones en un sector en particular.
+  - service:
+      title: Análisis de falla
+      content: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum
+        aliquam urna in ultrices. Proin nec venenatis arcu. Aenean id erat nec
+        est rhoncus placerat lobortis at risus. Suspendisse hendrerit sit amet
+        ante non blandit.
+
+
+        Maecenas lorem sapien, pulvinar nec magna nec, fermentum ultricies felis. Vivamus pulvinar nibh lectus, consectetur vehicula ipsum lacinia eu. Vestibulum bibendum at lectus sed consectetur. Donec commodo nunc risus, at mollis turpis hendrerit nec.
+
+
+        Proin vel lacinia leo. Suspendisse feugiat consequat feugiat
+
+
+        Maecenas lorem sapien, pulvinar nec magna nec, fermentum ultricies felis. Vivamus pulvinar nibh lectus, consectetur vehicula ipsum lacinia eu. Vestibulum bibendum at lectus sed consectetur. Donec commodo nunc risus, at mollis turpis hendrerit nec.
+  - service:
+      title: Soluciones de ingeniería
+      content: >-
+        En el vasto universo de la innovación, donde los sueños se entrelazan
+        con la ciencia, nace nuestra pasión por las soluciones de ingeniería.
+        Somos los arquitectos del mañana, los visionarios que convierten ideas
+        audaces en realidades tangibles.
+
+
+        Desde las profundidades del océano hasta las alturas del espacio, nuestro equipo de ingenieros expertos navega por los desafíos más complejos con la precisión de un reloj suizo y la creatividad de un artista renacentista. Cada proyecto es un lienzo en blanco, esperando ser transformado por nuestras mentes inquietas y manos hábiles.
+
+
+        ¿Imaginas un puente que desafíe la gravedad? Lo construimos. ¿Sueñas con ciudades flotantes que danzan sobre las olas? Las diseñamos. ¿Anhelas sistemas de energía que susurren en armonía con la naturaleza? Los creamos.
+
+
+        Nuestras soluciones no son solo respuestas a problemas; son catalizadores de progreso, faros de esperanza en un mundo hambriento de innovación. Con cada ecuación resuelta, cada prototipo perfeccionado, cada estructura erigida, acercamos el futuro un paso más a nuestro presente.
+
+
+        En este sanctum de ciencia y creatividad, no conocemos límites. Desafiamos lo convencional, abrazamos lo imposible y redefinimos los límites de lo posible. Porque para nosotros, la ingeniería no es solo una profesión; es un arte, una misión, una forma de vida.
+
+
+        Bienvenido al epicentro de la revolución tecnológica. Bienvenido a nuestro mundo de soluciones de ingeniería, donde cada día escribimos un nuevo capítulo en la historia del progreso humano.
+
+
+        ¿Listo para ser parte de la próxima gran innovación? Únete a nosotros, y juntos, construyamos un futuro que supere incluso nuestros sueños más audaces.
