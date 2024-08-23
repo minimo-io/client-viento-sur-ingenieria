@@ -18,16 +18,20 @@ layout: page
 
 <div x-data="{ activeTab: 'materiales'}">
   <div class="container flex flex-wrap  Xmd:flex-nowrap justify-center gap-4 py-4">
-    <div x-data="scroll" @click.prevent="activeTab = 'materiales'; scrollToTarget('heading-stop')"  :class="{ 'tab-active': activeTab === 'materiales' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
+
+    {# <div x-data="scroll" @click.prevent="activeTab = 'materiales'; scrollToTarget('heading-stop')"  :class="{ 'tab-active': activeTab === 'materiales' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Desarrollo de materiales</p>
       </div>
-    </div>
-    <div  x-data="scroll" @click.prevent="activeTab = 'asistencia'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'asistencia' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
+    </div> #}
+
+    {# <div  x-data="scroll" @click.prevent="activeTab = 'asistencia'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'asistencia' }" class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Asistencia técnica</p>
       </div>
-    </div>
+    </div> #}
+
+    
     <div  x-data="scroll" @click.prevent="activeTab = 'analisis'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'analisis' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Análisis de falla</p>
