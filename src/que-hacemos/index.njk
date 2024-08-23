@@ -31,8 +31,8 @@ layout: page
       </div>
     </div> #}
 
-    
-    <div  x-data="scroll" @click.prevent="activeTab = 'analisis'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'analisis' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
+
+    {# <div  x-data="scroll" @click.prevent="activeTab = 'analisis'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === 'analisis' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Análisis de falla</p>
       </div>
@@ -46,7 +46,7 @@ layout: page
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Fabricación aditiva</p>
       </div>
-    </div>  
+    </div>   #}
 
     {% for item in queHacemos.services %}
       {% set serviceSlug %}{{item.service.title | slugify}}{% endset %}
@@ -108,7 +108,7 @@ layout: page
       </p>
   </div>   #}
 
-  <div id="analisis" class="vs-section vs-section-service" x-show="activeTab === 'analisis'" x-transition>
+  {# <div id="analisis" class="vs-section vs-section-service" x-show="activeTab === 'analisis'" x-transition>
       <h2 class="vs-heading">Análisis de falla.</h2>
       <p class="vs-sub-heading font-light my-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum aliquam urna in ultrices. Proin nec venenatis arcu. Aenean id erat nec est rhoncus placerat lobortis at risus. Suspendisse hendrerit sit amet ante non blandit.
@@ -168,7 +168,7 @@ layout: page
       </p>
       
     </div>
-  </div>
+  </div> #}
 
   {% for item in queHacemos.services %}
     {% set serviceSlug %}{{ item.service.title | slugify}}{% endset %}
