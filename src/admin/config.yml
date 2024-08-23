@@ -91,14 +91,6 @@ collections:
                             - { label: Profession, name: profession, widget: string }
                             - { label: Link, name: link, widget: string }
                             - { label: Image, name: image, widget: file, default: "/static/uploads/profile-1.png" }
-
-          - label: "Qué hacemos"
-            name: "que-hacemos"
-            file: "src/_data/queHacemos.yaml"
-            fields:
-                - { label: Title, name: title, widget: string }
-                - { label: Description, name: description, widget: string }
-                - { label: Content, name: content, widget: markdown }
           - label: "Proyectos"
             name: "proyectos"
             file: "src/_data/proyectos.yaml"
