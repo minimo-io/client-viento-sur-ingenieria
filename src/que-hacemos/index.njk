@@ -42,7 +42,19 @@ layout: page
       <div class="text-center">
         <p class="text-sm uppercase mt-2 font-titillium tracking-wide">Fabricación aditiva</p>
       </div>
-    </div>            
+    </div>  
+
+    {% for item in queHacemos.services %}
+      {% set serviceSlug %}{{item.service.title | slugify}}{% endset %}
+      <div  x-data="scroll" @click.prevent="activeTab = '{{ serviceSlug }}'; scrollToTarget('heading-stop')" :class="{ 'tab-active': activeTab === '{{ serviceSlug }}' }"  class="hover:bg-sienna hover:text-white bg-sienna-300 p-5 cursor-pointer text-metal aspect-square  w-5/12 md:w-1/4 flex items-center justify-center">
+        <div class="text-center">
+          <p class="text-sm uppercase mt-2 font-titillium tracking-wide">{{ item.service.title }}</p>
+        </div>
+      </div>  
+    {% else %}
+      
+    {% endfor %}
+
   </div>
 
   <div class="py-5"><hr class="vs-hr" /></div>   
@@ -70,8 +82,6 @@ layout: page
 
   
   </div>
-
-
 
   <div id="asistencia" class="vs-section" x-show="activeTab === 'asistencia'" x-transition>
       <h2 class="vs-heading">Asistencia técnica.</h2>
@@ -154,7 +164,24 @@ layout: page
       </p>
       
     </div>
-  </div>    
+  </div>
+
+  {% for item in queHacemos.services %}
+    {% set serviceSlug %}{{ item.service.title | slugify}}{% endset %}
+      <div id="{{ serviceSlug }}" class="vs-section" x-show="activeTab === '{{ serviceSlug }}'" x-transition>
+        <div class="tab-content-inner">
+          <h2 class="vs-heading">{{ item.service.title }}.</h2>
+
+          {% renderTemplate "njk, md", item.service %}    
+            {{ content }}
+          {% endrenderTemplate %} 
+          
+        </div>
+      </div>  
+  {% else %}
+    
+  {% endfor %}
+ 
 
   <div class="my-10">
     <a href="/contacto" type="button" class="font-light text-white font-titillium hover:opacity-50 bg-sienna rounded-md text-sm px-5 py-3 me-2 mb-2  uppercase">Entrar en contacto</a>
