@@ -5,3 +5,18 @@ introContent: Aquí encontrarás la solución a tus desafíos técnicos. Desde e
   desarrollo de materiales innovadores hasta la resolución de problemas
   complejos, nuestro equipo de ingenieros te ofrece soluciones personalizadas
   para impulsar tu proyecto!
+services:
+  - service:
+      title: Mecatrônica
+      content: >-
+        La ingeniería mecatrónica (también, mecatrónica) es una rama
+        multidisciplinaria de la ingeniería, la cual desarrolla dispositivos y
+        tecnologías de varios campos del conocimiento en los que se unen las
+        ramas de sistemas, electrónica, mecánica y control, con el uso combinado
+        de la robótica y de la ingeniería electrónica y sistemas. 
+
+
+        ![](/static/uploads/bg-tunnel.jpg)
+
+
+        La mecatrónica engloba así el desarrollo de productos que involucren un sistema de control para productos o procesos inteligentes, lo cual busca crear **maquinaria más compleja** para facilitar las actividades del ser humano a través de procesos electrónicos de sistemas de control aplicados en la industria. Esta disciplina une la ingeniería de sistemas/ciencia de la computación,\[cita requerida] la ingeniería electrónica, la ingeniería mecánica y la ingeniería de control.
