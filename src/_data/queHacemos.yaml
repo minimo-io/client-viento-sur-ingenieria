@@ -7,6 +7,52 @@ introContent: Aquí encontrarás la solución a tus desafíos técnicos. Desde e
   para impulsar tu proyecto!
 services:
   - service:
+      title: Desarrollo de materiales
+      content: >-
+        En Viento Sur Ingeniería no nos limitamos a utilizar los materiales
+        existentes, **los reinventamos**. Nuestro equipo de desarrollo de
+        materiales trabaja en la vanguardia de la innovación, explorando nuevas
+        posibilidades y desafiando las convenciones para ofrecerte soluciones a
+        medida que impulsan tu visión.
+
+
+        Combinamos la experiencia en ingeniería con la creatividad sin límites para desarrollar materiales que no solo cumplen con tus especificaciones técnicas, sino que también abren nuevas posibilidades de diseño y funcionalidad.
+
+
+        Proin vel lacinia leo. Suspendisse feugiat consequat feugiat.
+
+
+        ![desarrollo-de-materiales](/static/uploads/bg-tunnel.jpg "desarrollo de materiales")
+
+
+        ¿Necesitas un material más ligero y resistente? ¿O uno que sea flexible y duradero? Comparte tu desafío con nosotros y trabajaremos juntos para materializar tus ideas.
+
+
+        En [Viento Sur Ingeniería](/), la innovación no es solo una palabra de moda, es parte de nuestro ADN. Permítenos ayudarte a construir el futuro, un material a la vez.
+  - service:
+      title: Asistencia técnica
+      content: >-
+        Aquí en Viento Sur Ingeniería, no solo construimos soluciones,
+        construimos relaciones. Entendemos la frustración de un proyecto en
+        pausa por un problema técnico inesperado. Por eso, te ofrecemos
+        asistencia técnica personalizada, con la atención y el expertise que
+        necesitas para superar cualquier obstáculo.
+
+
+        ### ¿Qué puedes esperar de nuestro servicio?
+
+
+        Respuestas claras y concisas: Olvida las largas explicaciones técnicas. Te guiaremos paso a paso, con un lenguaje sencillo y directo.
+
+
+        Expertos a tu disposición: Nuestro equipo de ingenieros altamente capacitados está listo para brindarte soluciones eficientes y creativas.
+
+
+        Disponibilidad cuando la necesitas: Sabemos que el tiempo es oro. Por eso, ofrecemos diferentes canales de comunicación para que puedas contactarnos con facilidad.
+
+
+        Compromiso con tu éxito: Tu éxito es nuestro éxito. Trabajaremos contigo hasta que el problema esté resuelto y tu proyecto vuelva a tomar impulso.
+  - service:
       title: Mecatrônica
       content: >-
         La ingeniería mecatrónica (también, mecatrónica) es una rama
