@@ -46,7 +46,7 @@ path: home
 
 {% include "clients.njk" %}
 
-<div class="container mb-5 relative {% if fullWidth %}max-w-screen-lg{%else%}max-w-screen-sm{%endif%} flex items-start justify-center px-7 md:px-0 {% if showClients %}-top-14{%endif%}">
+<div class="container -top-[4.9rem] mb-5 relative {% if fullWidth %}max-w-screen-lg{%else%}max-w-screen-sm{%endif%} flex items-start justify-center px-7 md:px-0 {% if showClients %}-top-14{%endif%}">
     {% if not fullWidth %}<div class="block">{%endif%}
        <div class="vs-section vs-section-service vs-home">       
 {% renderTemplate "njk, md", homepage %}    
